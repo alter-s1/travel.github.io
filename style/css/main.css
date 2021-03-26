@@ -4,6 +4,7 @@
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
+  font-family: 'Crimson Text', serif;
 }
 
 .header{
@@ -60,7 +61,7 @@ ul li:hover a{
 .sidebar ul a i{
   margin-right: 16px;
 }
-
+                                                                                                                                                                                                                                            
 #check{
   position: fixed;
   display: none;
@@ -75,26 +76,24 @@ label #btn,label #cancel{
 
 label #btn{
   position: fixed;
-  height: 30px;
-  width: 60px;
+
   left: 40px;
   top: 25px;
   font-size: 25px;
   color: #fff;
-  padding: 6px 12px;
-  transition: all .5s;
-  z-index: 2;
+  transition: linear .25s;
+  z-index: 5;
 }
 
 label #cancel{
+
   position: fixed;
   text-align: center;
-  z-index: 2;
+  z-index: 5;
   left: -150px;
-  top: 17px;
+  top: 25px;
   font-size: 25px;
   color: #fff;
-  padding: 4px 9px;
   transition: all .5s ease;
 }
 
@@ -116,43 +115,57 @@ label #cancel{
   margin-left: 250px;
 }
 
+.logo{
+  position: absolute;
+  right: 40px;
+  top: 25px;
+  color: #fff;
+  font-size: 25px;
+  background: ;
+}
+
 .main {
   width: 100%;
   height: 100%;
 }
 
 .section {
-  height: 200vh;
+  height: 100vh;
   width: 100%;
   display: flex;
-  background: url("../assets/img1.jpg") no-repeat center center;
+  justify-content: center;
+  align-items: center;
+  background: url("../assets/img5.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.description-section {
-  transform: translateY(40%);
-  margin-left: 150px;
-  height: 85vh;
-  width: 40%;
-  line-height: 25px;
-  background: #fff;
-  border-radius: 10px;
+.section hr{
+  width: 80%;
+  margin: auto;
 }
 
-.description-section-2 {
-  right: 150px;
-  transform: translateY(110%);
-  margin-left: 150px;
-  height: 85vh;
-  width: 40%;
+.section h2 {
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.container {
+  display: flex;
+}
+
+.description-section {
+  height: 100%;
+  width: 100%;
   line-height: 25px;
   background: #fff;
-  border-radius: 10px;
 }
 
 .description-section p{
-  padding: 50px;
+  padding-left: 80px;
+  padding-top: 50px;
+  padding-right: 80px;
   
 }
 
@@ -175,15 +188,15 @@ label #cancel{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: url("../assets/img2.jpg") no-repeat center center;
+  background: url("../assets/img6.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .msg_container{
   margin-right: 10%;
-  width: 550px;
-  height: 450px;
+  width: 650px;
+  height: 550px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, .5);
 }
@@ -194,8 +207,8 @@ label #cancel{
 }
 
 .msg_col{
-  width: 550px;
-  height: 450px;
+  width: 650px;
+  height: 550px;
   backdrop-filter: blur(4px);
   background: rgba(20,20,20, 0.1);
 }
