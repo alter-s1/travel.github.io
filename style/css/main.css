@@ -76,7 +76,7 @@ label #btn,label #cancel{
 
 label #btn{
   position: fixed;
-
+  padding: 5px 10px;
   left: 40px;
   top: 25px;
   font-size: 25px;
@@ -86,7 +86,7 @@ label #btn{
 }
 
 label #cancel{
-
+  padding: 5px 10px;
   position: fixed;
   text-align: center;
   z-index: 5;
@@ -130,7 +130,7 @@ label #cancel{
 }
 
 .section {
-  height: 100vh;
+  height: 150vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -163,98 +163,24 @@ label #cancel{
 }
 
 .description-section p{
-  padding-left: 80px;
+  padding-left: 170px;
   padding-top: 50px;
-  padding-right: 80px;
+  padding-right: 150px;
   
 }
 
 .description-section h3{
-  padding: 50px 0 0 50px;
+  padding: 50px 0 0 150px;
   color: #000;
   
 }
 
-.description-section-img img{
-  height: 350px;
-  width: 650px;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-.slider-container {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: url("../assets/img6.jpg") no-repeat center center;
-  background-size: cover;
+.img-1{
+  background: url("../assets/img2.jpg") no-repeat center center fixed;
   background-attachment: fixed;
+  height: 450px;
+  width: 100%;
+  margin: auto;
+  margin-top: 100px;
 }
 
-.msg_container{
-  margin-right: 10%;
-  width: 650px;
-  height: 550px;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, .5);
-}
-
-#slider{
-  display: inline-flex;
-  transition: .5s;
-}
-
-.msg_col{
-  width: 650px;
-  height: 550px;
-  backdrop-filter: blur(4px);
-  background: rgba(20,20,20, 0.1);
-}
-
-.msg_col h1{
-  padding-top: 35px;
-  margin-bottom: 15px;
-  margin-left: 10px;
-  font-weight: 400;
-}
-
-.msg_col p{
-  color: #fff;
-  font-size: 17px;
-  line-height: 25px;
-  padding: 0 5px 0 10px;
-}
-
-.controller{
-  position: relative;
-  left: 50px;
-}
-
-#point1,#point2,#point3,#point4{
-  height: 50px;
-  opacity: 0.6;
-  width: 3px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  cursor: pointer;
-  transform: translateX(-50%);
-  background: #000;
-  transition: .5s;
-}
-
-#point1:hover,#point2:hover,#point3:hover,#point4:hover{
-  opacity: 1;
-}
-
-#active{
-  height: 50px;
-  width: 4px;
-  border-radius: 5px;
-  background: #fff;
-  position: absolute;
-  top: 0;
-  transform: translateX(-50%);
-  transition: .5s;
-}
