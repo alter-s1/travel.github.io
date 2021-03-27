@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -7,7 +7,12 @@
   font-family: 'Crimson Text', serif;
 }
 
-.header{
+.page {
+  height: 100%;
+  width: 100%;
+}
+
+.header {
   height: 100vh;
   width: 100%;
   background: url("../assets/background.jpg") no-repeat center center;
@@ -15,14 +20,14 @@
   background-attachment: fixed;
 }
 
-.header-content {
+.wrapper {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header-title {
+#slogan {
   font-size: 25px;
 }
 
@@ -37,11 +42,11 @@
   transition: all .5s ease;
 }
 
-.sidebar ul{
+.menu {
   width: 100%;
 }
 
-.sidebar ul a{
+.menu-item {
   display: block;
   height: 100%;
   width: 100%;
@@ -50,31 +55,27 @@
   color: white;
   padding-left: 40px;
   box-sizing: border-box;
-  border-top: 1px solid rgba(255,255,255,.1);
+  border-top: 1px solid rgba(255, 255, 255, .1);
   transition: .4s;
 }
 
-ul li:hover a{
+.menu li:hover a {
   padding-left: 50px;
 }
 
-.sidebar ul a i{
-  margin-right: 16px;
-}
-                                                                                                                                                                                                                                            
-#check{
+#check {
   position: fixed;
   display: none;
 }
 
-label #btn,label #cancel{
+label #btn-menu, label #btn-cancel {
   position: absolute;
   background: #000;
   border-radius: 3px;
   cursor: pointer;
 }
 
-label #btn{
+label #btn-menu {
   position: fixed;
   padding: 5px 10px;
   left: 40px;
@@ -85,7 +86,7 @@ label #btn{
   z-index: 5;
 }
 
-label #cancel{
+label #btn-cancel {
   padding: 5px 10px;
   position: fixed;
   text-align: center;
@@ -97,25 +98,25 @@ label #cancel{
   transition: all .5s ease;
 }
 
-#check:checked ~ .sidebar{
+#check:checked~.sidebar {
   left: 0;
 }
 
-#check:checked ~ label #btn{
+#check:checked~label #btn-menu {
   left: 50px;
   opacity: 0;
   pointer-events: none;
 }
 
-#check:checked ~ label #cancel{
+#check:checked~label #btn-cancel {
   left: 295px;
 }
 
-#check:checked ~ section{
+#check:checked~section {
   margin-left: 250px;
 }
 
-.logo{
+.logo {
   position: absolute;
   right: 40px;
   top: 25px;
@@ -130,53 +131,50 @@ label #cancel{
 }
 
 .section {
+  padding-top: 50px;
+  padding-bottom: 50px;
   height: 150vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background: url("../assets/img5.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.section hr{
+.underline {
   width: 80%;
   margin: auto;
 }
 
-.section h2 {
+#headline{
   padding-top: 50px;
   text-align: center;
   padding-bottom: 50px;
 }
 
-.container {
-  display: flex;
-}
-
-.description-section {
-  height: 100%;
+.content {
+  height: 100vh;
   width: 100%;
   line-height: 25px;
   background: #fff;
 }
 
-.description-section p{
+.paragraph {
   padding-left: 170px;
   padding-top: 50px;
   padding-right: 150px;
-  
 }
 
-.description-section h3{
+.subtitle {
   padding: 50px 0 0 150px;
   color: #000;
-  
 }
 
-.img-1{
-  background: url("../assets/img2.jpg") no-repeat center center fixed;
+.picture-1 {
+  background: url("../assets/picture-1.jpg") no-repeat center center fixed;
   background-attachment: fixed;
   height: 450px;
   width: 100%;
@@ -184,12 +182,11 @@ label #cancel{
   margin-top: 100px;
 }
 
-.img-2{
-  background: url("../assets/img4.jpg") no-repeat center center fixed;
+.picture-2 {
+  background: url("../assets/picture-2.jpg") no-repeat center center fixed;
   background-attachment: fixed;
   height: 450px;
   width: 100%;
   margin: auto;
   margin-top: 100px;
 }
-
